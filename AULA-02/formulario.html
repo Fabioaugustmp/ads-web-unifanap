@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <!-- Informações de Input -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
+
+    <style>
+      input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Cadastro Funcionário</h2>
+    
+      <form id="cadastro" action="" method="post">
+        <!-- Cadastro de usuário -->
+        <div>
+            <label for="name">Nome: </label>
+            <input id="name" type="text" 
+            placeholder="Informe o seu nome" />
+            <br>
+            <label for="email">Email: </label>
+            <input id="email" type="email" 
+            placeholder="Informe o seu email" />
+            <br>
+            <label for="birthDate">Data de Nascimento: </label>
+            <input id="birthDate" type="date" 
+            placeholder="Informe sua data de nascimento" />
+            <br>
+            <label for="phone">Telefone: </label>
+            <input id="phone" type="tel" 
+            placeholder="Informe o seu número" />
+            <br>
+            <label for="job">Cargo</label>
+            <select name="job" id="job" style="cursor: pointer;" >
+            <option default>Selecione ...</option>
+            <option value="ESTAGIARIO">Estagiário</option>
+            <option value="DEV JUNIOR">Desenvolvedor Jûnior</option>
+            <option value="DEV PLENO">Desenvolvedor Pleno</option>
+            <option value="DEV SÊNIOR">Desenvolvedor Sênior</option>
+            <option value="TECH LEAD">Tech Lead</option>
+            </select>
+            <br>
+            <label for="curriculum">Anexar currículo</label>
+            <input id="curriculum" type="file" accept=".pdf"  />
+            <br>
+            <label for="arquivo">Foto</label>
+            <input id="arquivo" type="file" accept="image/*"  />
+
+            <input type="color">
+        </div>
+        <!-- Cadastro de Endereço do Usuário -->
+        <div>
+            <h2>Endereço</h2>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP">
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
+            </div>
+            <div class="form-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Digite o complemento (opcional)">
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" class="form-control" id="numero" name="numero" placeholder="Digite o número">
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a cidade">
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <select class="form-control" id="estado" name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapá</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            
+        </div>
+        <br>
+     
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar Formulário</button>
+    </form>
+
+      <!-- Nome
+    CPF
+    Email
+    Data de Nascimento
+    Telefone
+    Função
+    Foto
+
+    Endereço
+        - CEP
+        - LOgradouro
+        - Complemento
+        - Número
+        - Cidade
+        - Estado -->
+    </section>
+  </body>
+</html>
