@@ -1,0 +1,53 @@
+div {
+  color: #fff;
+}
+
+section {
+  border: solid 1px blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#model {
+  background-color: blue;
+  /* padding: 20px; */
+  /* margin-top: 30px;
+  margin-bottom: 10px; */
+  border: solid 3px red;
+  border-radius: 5px;
+}
+
+.box2 {
+  background-color: yellow;
+  /* padding-top: 50px;
+  padding-right: 50px; */
+  /* margin-right: 20px; */
+}
+
+.box3 {
+  background-color: green;
+}
+
+
+.send {
+    color: #fff;
+    background-color: blue;
+    border: solid 1px blue;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 20px;
+    height: 30px;
+    width: 100px;
+}
+
+.send:hover{
+    background-color: #fff;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+}
